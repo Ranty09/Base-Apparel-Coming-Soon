@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'josefin sans', sans-serif;  
+  background-color: hsla(0, 6%, 24%, 0.116); 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.card{
+  width: 375px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:  #fff ;
+  
+}
+.logo-symbol{
+  height: 25px;
+  width: 25px;
+  border: 3px solid hsl(0, 37%, 58%);
+  border-radius: 50px;
+ 
+}
+.logo-group{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 12px;
+  letter-spacing: 3px;
+  line-height: 12px;
+  margin-top: 20px;
+}
+.card-b{
+  height: 35%;
+  width: 100%;
+  background-image: url(./images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-a{
+  height: 60%;
+ 
+
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+h1{
+  text-transform: uppercase;
+  max-width: 40px;
+  font-size: 34px;
+ 
+}
+.main-text{
+  font-size: 12px;
+  margin-top: 20px;
+  color: hsl(0, 37%, 58%) ;
+  line-height: 20px;
+}
+.we{
+  font-weight: 350;
+  letter-spacing: 10px;
+  color: hsl(0, 37%, 58%) ;
+
+}
+.coming-soon{
+  letter-spacing: 12px;
+  font-weight: 550;
+}
+.input{
+  padding: 13px 70px 13px 20px;
+  border-radius: 50px;
+  border: 1px solid hsla(0, 58%, 70%, 0.651) ;
+  margin-top: 20px;
+  position: absolute;
+  
+  
+}
+.form-space{
+  position: relative;
+  
+  
+}
+.input::placeholder{
+  font-size: 11px;
+  color:hsla(0, 58%, 70%, 0.89) ;
+}
+
+button{
+  position: absolute;
+  left: 200px;
+  border-radius: 50px;
+  padding: 10px 30px 32px 30px ;
+  border: none;
+  background-color: hsl(0, 46%, 74%);
+  margin-top: 20px;
+  transition: 1s;
+}
+button:hover{
+  background-color:  hsl(0, 87%, 55%);
+  cursor: pointer;
+}
+
+.svg{
+  position: absolute;
+  transform: translateY(-1px);
+  
+}
+
+  
+
+/*RESPONSIVENESS*/
+
+@media(min-width: 1000px)
+{
+  
+.card{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: -5px 5px #8888881a;
+  background-color: #fff;
+ 
+} 
+.card-b{
+  order: 1;
+  background-image: url(./images/hero-desktop.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  width: 45%;
+  position: relative;
+}
+.card-a{
+  margin-right: 80px;
+  width: 55%;
+  position: absolute;
+  justify-content: space-around;
+  padding-top: 120px;
+  max-width: 33%;
+  
+}
+.logo-group{
+  display: flex;
+  transform: translateX(60px);
+}
+h1{
+  font-size: 45px;
+}
+.main-text{
+  font-size: 12px;
+}
+.form-space{
+  position: relative;
+  
+}
+.input{
+  padding: 8px 130px 8px 5px;
+  border-radius: 50px;
+  border: 1px solid hsla(0, 35%, 66%, 0.486) ;
+  margin-top: 20px;
+  position: absolute;}
+
+  .input::placeholder{
+    padding-left: 20px;
+    font-size: 10px;
+  }
+
+button{
+  position: absolute;
+  left: 245px;
+  border-radius: 50px;
+  padding: 10px 30px 22px ;
+  border: none;
+  background-color: hsl(0, 37%, 58%);
+  margin-top: 20px;
+}
+
+
+.svg{
+  position: absolute;
+  transform: translateY(-4px);
+  
+}
+
+}
